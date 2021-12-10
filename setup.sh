@@ -3,20 +3,24 @@ packages='
   chromium
   curl
   dbus-daemon
+  diffstat
   expect
   fedora-packager
   fish
   flatpak
   flatpak-builder
   flatpak-spawn
+  fpaste
   gdb
   git
   glibc-langpack-de
   glibc-langpack-en
   gnupg
+  krb5-libs
   less
   libvirt-client
   libvirt-daemon-driver-qemu
+  lsof
   man
   man-db
   man-pages
@@ -24,7 +28,9 @@ packages='
   neovim
   npm
   opensc
+  patchutils
   pcsc-lite-devel
+  podman
   procps
   python3-argcomplete
   python3-devel
