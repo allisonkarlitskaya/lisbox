@@ -35,13 +35,12 @@ packages='
   python3-yaml
   qemu-img
   qemu-kvm
-  sassc
   socat
   strace
   sudo
-  swig
   valgrind
   virt-install
+  webkit2gtk3
   wget
 '
 
