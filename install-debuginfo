@@ -1,0 +1,8 @@
+glib-networking
+glib2
+glibc
+gnutls
+gtk3
+json-glib
+libssh
+systemd-libs
