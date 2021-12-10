@@ -1,55 +1,3 @@
-packages='
-  bubblewrap
-  chromium
-  curl
-  dbus-daemon
-  diffstat
-  expect
-  fedora-packager
-  fish
-  flatpak
-  flatpak-builder
-  flatpak-spawn
-  fpaste
-  gdb
-  git
-  glibc-langpack-de
-  glibc-langpack-en
-  gnupg
-  krb5-libs
-  less
-  libvirt-client
-  libvirt-daemon-driver-qemu
-  lsof
-  man
-  man-db
-  man-pages
-  neofetch
-  neovim
-  npm
-  opensc
-  patchutils
-  pcsc-lite-devel
-  podman
-  procps
-  python3-argcomplete
-  python3-devel
-  python3-libvirt
-  python3-pillow
-  python3-pycodestyle
-  python3-pyflakes
-  python3-yaml
-  qemu-img
-  qemu-kvm
-  socat
-  strace
-  sudo
-  valgrind
-  virt-install
-  webkit2gtk3
-  wget
-'
-
 # before anything else: re-enable install of manpages
 sed -ie 's/\<nodocs\>//' /etc/dnf/dnf.conf
 # reinstall system packages which should have had manpages
@@ -62,7 +10,9 @@ cat > /usr/lib/rpm/macros.d/macros.toolbox <<EOF
 EOF
 
 dnf update -y
-dnf install -y dnf-plugins-core
-dnf build-dep -y cockpit
-dnf install --setopt=install_weak_deps=False -y ${packages}
+dnf install -y $(</setup/install) dnf-plugins-core
+dnf build-dep -y $(</setup/install-build-dep)
+
 ln -Tsf host/run/pcscd /run/pcscd
+
+rm -r /setup
