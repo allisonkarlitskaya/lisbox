@@ -17,6 +17,9 @@ packages='
   less
   libvirt-client
   libvirt-daemon-driver-qemu
+  man
+  man-db
+  man-pages
   neofetch
   neovim
   npm
@@ -41,6 +44,12 @@ packages='
   virt-install
   wget
 '
+
+# before anything else: re-enable install of manpages
+sed -ie 's/\<nodocs\>//' /etc/dnf/dnf.conf
+# reinstall system packages which should have had manpages
+dnf reinstall -y $(rpm -qa --queryformat '%{NAME}[:%{FILENAMES}]\n' |
+                   grep ':/usr/share/man/' | cut -f1 -d:)
 
 # https://github.com/containers/toolbox/pull/640
 cat > /usr/lib/rpm/macros.d/macros.toolbox <<EOF
