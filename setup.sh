@@ -38,6 +38,11 @@ packages='
   wget
 '
 
+# https://github.com/containers/toolbox/pull/640
+cat > /usr/lib/rpm/macros.d/macros.toolbox <<EOF
+%_netsharedpath /dev:/media:/mnt:/proc:/sys:/tmp:/var/lib/flatpak:/var/lib/libvirt
+EOF
+
 dnf update -y
 dnf install -y dnf-plugins-core
 dnf build-dep -y cockpit
