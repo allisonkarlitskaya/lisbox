@@ -1,10 +1,14 @@
 packages='
+  bubblewrap
   chromium
   curl
   dbus-daemon
   expect
   fedora-packager
   fish
+  flatpak
+  flatpak-builder
+  flatpak-spawn
   gdb
   git
   glibc-langpack-de
