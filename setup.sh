@@ -12,6 +12,7 @@ EOF
 dnf update -y
 dnf install -y $(</setup/install) dnf-plugins-core
 dnf build-dep -y $(</setup/install-build-dep) filesystem
+dnf clean all
 
 ln -Tsf host/run/pcscd /run/pcscd
 
