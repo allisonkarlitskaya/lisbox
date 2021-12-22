@@ -52,3 +52,4 @@ virt-install
 vte-profile
 webkit2gtk3
 wget
+yubikey-manager
