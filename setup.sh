@@ -15,6 +15,8 @@ dnf build-dep -y $(</setup/install-build-dep) filesystem
 dnf debuginfo-install -y $(</setup/install-debuginfo) filesystem
 dnf clean all
 
+npm install -g @bitwarden/cli
+
 ln -Tsf host/run/pcscd /run/pcscd
 
 rm -r /setup
