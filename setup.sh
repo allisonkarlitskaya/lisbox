@@ -17,6 +17,4 @@ dnf clean all
 
 npm install -g @bitwarden/cli
 
-ln -Tsf host/run/pcscd /run/pcscd
-
 rm -r /setup
