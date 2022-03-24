@@ -2,6 +2,7 @@ bubblewrap
 chromium
 curl
 dbus-daemon
+devhelp
 diffstat
 dnf-plugins-core
 expect
