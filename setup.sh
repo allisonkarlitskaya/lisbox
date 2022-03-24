@@ -16,5 +16,6 @@ dnf debuginfo-install -y $(</setup/install-debuginfo) filesystem
 dnf clean all
 
 npm install -g @bitwarden/cli
+pip install diffoscope
 
 rm -r /setup
