@@ -17,6 +17,7 @@ git
 glibc-langpack-de
 glibc-langpack-en
 gnupg
+hyperfine
 krb5-libs
 less
 libvirt-client
