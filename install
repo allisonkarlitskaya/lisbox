@@ -1,3 +1,4 @@
+bash-completion
 bubblewrap
 chromium
 curl
@@ -7,7 +8,6 @@ diffstat
 dnf-plugins-core
 expect
 fedora-packager
-fish
 flatpak
 flatpak-builder
 flatpak-spawn
@@ -36,7 +36,9 @@ pcsc-lite-devel
 podman
 procps
 python3-argcomplete
+python3-dbusmock
 python3-devel
+python3-flake8
 python3-libvirt
 python3-pillow
 python3-pycodestyle
@@ -46,14 +48,19 @@ python3-pylint
 python3-yaml
 qemu-img
 qemu-kvm
+rsync
+rust
 socat
+ShellCheck
 strace
 sudo
+tox
 tree
 unzip
 util-linux
 valgrind
 virt-install
+virt-viewer
 vte-profile
 webkit2gtk3
 wget
