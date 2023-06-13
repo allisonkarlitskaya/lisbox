@@ -15,6 +15,4 @@ dnf build-dep -y $(</setup/install-build-dep) filesystem
 dnf debuginfo-install -y $(</setup/install-debuginfo) filesystem
 dnf clean all
 
-pip install diffoscope
-
 rm -r /setup

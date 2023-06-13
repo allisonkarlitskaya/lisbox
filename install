@@ -35,6 +35,7 @@ patchutils
 pcsc-lite-devel
 podman
 procps
+pew
 python3-argcomplete
 python3-dbusmock
 python3-devel
