@@ -15,4 +15,6 @@ dnf build-dep -y $(</setup/install-build-dep) filesystem
 dnf debuginfo-install -y $(</setup/install-debuginfo) filesystem
 dnf clean all
 
+PIPX_HOME=/opt/pipx PIPX_BIN_DIR=/usr/local/bin sh -eux /setup/pipx.sh
+
 rm -r /setup
